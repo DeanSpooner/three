@@ -4,6 +4,7 @@
   background-color: #222121;
 }
 
-.canvas > Canvas {
+.canvas > Canvas,
+.canvas {
   height: 86.3vh;
 }

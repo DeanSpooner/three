@@ -1,0 +1,83 @@
+.Navbar {
+  background: #3f3d3d;
+  padding: 1rem 0 0.05rem;
+  position: relative;
+  top: -2rem;
+  width: 100vw;
+}
+
+a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+.title {
+  background: #da8a8d;
+  background-color: #da8a8d;
+  background: conic-gradient(
+    #da8a8d 25%,
+    #f5f5f5 25%,
+    #f5f5f5 50%,
+    #77796c 50%,
+    #77796c 75%,
+    #7ee18d 75%,
+    #7ee18d 100%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titleHoverRev 0.5s ease forwards;
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title:hover {
+  animation: titleHover 1s forwards;
+  -webkit-animation: titleHover 1s forwards;
+  -moz-animation: titleHover 1s forwards;
+  -o-animation: titleHover 1s forwards;
+}
+
+@keyframes titleHover {
+  0% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 100%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -4em 1em;
+  }
+}
+
+@keyframes titleHoverRev {
+  0% {
+    background-size: 300%;
+    background-position: -4em 1em;
+  }
+  20% {
+    background-size: 100%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+}

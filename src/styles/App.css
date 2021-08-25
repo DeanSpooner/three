@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.App {
+  background-color: #222121;
+}
+
+.canvas > Canvas {
+  height: 86.3vh;
+}

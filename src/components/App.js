@@ -10,8 +10,8 @@ function App() {
     <div className="App" data-testid="app">
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Test1} />
-        <Route exact path="/test2" component={Test2} />
+        <Route exact path="/three" component={Test1} />
+        <Route exact path="/three/test2" component={Test2} />
       </Switch>
     </div>
   );

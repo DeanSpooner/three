@@ -2,7 +2,7 @@
   "name": "three",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gitname.github.io/react-gh-pages",
+  "homepage": "http://deanspooner.github.io/three",
   "dependencies": {
     "@react-three/fiber": "^7.0.6",
     "@testing-library/jest-dom": "^5.14.1",

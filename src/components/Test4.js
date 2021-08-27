@@ -1,10 +1,12 @@
 import React, { useRef, useState, useMemo } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree, extend } from "@react-three/fiber";
 import * as THREE from "three";
-
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import CameraControls from "./CameraControls";
 import "../styles/App.css";
-
 import logo from "../assets/cd-logo-short.png";
+
+extend({ OrbitControls });
 
 const Cylinder = props => {
   // This reference will give us direct access to the THREE.Mesh object
@@ -49,6 +51,7 @@ const Test4 = () => {
   return (
     <Canvas className="canvas">
       <Cylinder position={[0, 0, 0]} className="pyramid" />
+      <CameraControls />
     </Canvas>
   );
 };

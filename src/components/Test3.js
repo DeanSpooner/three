@@ -1,7 +1,10 @@
 import React, { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-
+import { Canvas, useFrame, extend } from "@react-three/fiber";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import CameraControls from "./CameraControls";
 import "../styles/App.css";
+
+extend({ OrbitControls });
 
 const Box = props => {
   // This reference will give us direct access to the THREE.Mesh object
@@ -70,6 +73,7 @@ const Test3 = () => {
       <Box position={[-3.5, 0, 0]} className="box" />
       <Box position={[3.5, 0, 0]} className="box" />
       <Pyramid position={[0, 0, 0]} className="pyramid" />
+      <CameraControls />
     </Canvas>
   );
 };

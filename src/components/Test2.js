@@ -1,9 +1,12 @@
 import React, { useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, extend } from "@react-three/fiber";
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import CameraControls from "./CameraControls";
 import "../styles/App.css";
-
 import beachball from "../assets/beachball.jpeg";
+
+extend({ OrbitControls });
 
 const Box = props => {
   // This reference will give us direct access to the mesh
@@ -31,6 +34,7 @@ const Test2 = () => {
   return (
     <Canvas className="canvas">
       <Box position={[0, 0, 0]} />
+      <CameraControls />
     </Canvas>
   );
 };

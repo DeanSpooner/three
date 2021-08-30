@@ -1,8 +1,9 @@
 .Navbar {
-  background: #3f3d3d;
+  background: #222121;
+  height: 3rem;
   padding: 1rem 0 0.05rem;
   position: relative;
-  top: -2rem;
+  bottom: 1.5rem;
   width: 100vw;
 }
 

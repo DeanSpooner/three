@@ -1,0 +1,8 @@
+.canvasTest5 {
+  background: rgb(253, 181, 45);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 181, 45, 1) 0%,
+    rgba(176, 18, 90, 1) 100%
+  );
+}

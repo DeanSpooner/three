@@ -19,9 +19,9 @@ const CameraControls = () => {
       ref={controls}
       args={[camera, domElement]}
       enableZoom={true}
-      maxAzimuthAngle={Math.PI / 4}
+      maxAzimuthAngle={Math.PI * 4}
       maxPolarAngle={Math.PI}
-      minAzimuthAngle={-Math.PI / 4}
+      minAzimuthAngle={-Math.PI * 4}
       minPolarAngle={0}
     />
   );

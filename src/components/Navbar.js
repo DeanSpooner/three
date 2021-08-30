@@ -26,6 +26,11 @@ const Navbar = () => {
             <h1 className="title">Test 4</h1>
           </Link>
         </li>
+        <li className="navbar-links-item">
+          <Link className="item" to="/three/test5">
+            <h1 className="title">Test 5</h1>
+          </Link>
+        </li>
       </ul>
     </div>
   );

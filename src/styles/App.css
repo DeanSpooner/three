@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
+html {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
 .App {
   background-color: #222121;
 }
 
 .canvas > Canvas,
 .canvas {
-  height: 86.3vh;
+  height: calc(100vh - 3rem);
 }
